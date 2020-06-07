@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+body::before
+{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter:blur(10px);
+}
+.login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    padding: 80px 40px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.registration-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 540px;
+    padding: 80px 40px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.login-form h2,
+.registration-form h2
+{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.login-form p,
+.registration-form p,
+.registration-form label
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+.login-form input,
+.registration-form input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-form input[type=email],
+.login-form input[type=password],
+.registration-form input[type=text],
+.registration-form input[type=tel],
+.registration-form input[type=email],
+.registration-form input[type=password]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+.login-form input[type=submit],
+.registration-form input[type=submit]{
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    font-size: 15px;
+    background: yellowgreen;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    padding: 0;
+    float: right;
+}
+.registration-form select
+{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
