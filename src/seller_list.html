@@ -2,27 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title>RollingCargo</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/mobile-style.css">
+
+    <style>
+        .checked {
+            color:yellowgreen;
+        }
+    </style>
+    <title>Avocorp</title>
 </head>
 
 <body>
-
+    <!--front part of -->
     <header>
         <div class="container-fluid p-0">
             <!--Navigation bar-->
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../assets/avocado.png" />Avocorp</a>
+                    <img src="../assets/avocadologo.png" style="height: 60px;width: 70px;"/>Avocorp</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-align-right text-light"></i>
@@ -36,59 +41,79 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Find Seller</a>
+                            <a class="nav-link" href="seller_list.html">Find Seller</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">about us</a>
+                            <a class="nav-link" href="#">About us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">login<i class="fas fa-user "></i></a>
+                            <a class="nav-link" href="login.html">login<i class="fas fa-user "></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <section class="section-1">
-            <div class="container">
-                <h5 style="color: white; text-align: center;">CHOOSE THE TYPES</h5>
-                <div class="row row-cols-1 row-cols-md-2">
-
-                    <div class="col-lg-6 col-sm-12">
-                        <a href="seller_list.html">
-                            <div class="card text-center hover-shadow-lg hover-translate-y-n10 " width="50%"
-                                height="50%">
-                                <div class="px-4 py-5">
-                                    <img src="../assets/hass-avocado.png" width="100%" height="100%" />
-                                </div>
-                                <div class="px-4 pb-5" style="color: rgb(124, 219, 124);">
-                                    <h5>Hass Avocados</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-6 col-sm-12">
-                        <a href="seller_list.html">
-                            <div class="card text-center hover-shadow-lg hover-translate-y-n10">
-                                <div class="px-4 py-5">
-                                    <img src="../assets/fuerte-avocado.png" width="100%" height="100%" />
-                                </div>
-                                <div class="px-4 pb-5" style="color: rgb(124, 219, 124);">
-                                    <h5>Fuerte Avocados</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
     </header>
+    <main>
+        <h4 style="text-align: center;">SELECT A SELLER</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">location</th>
+                    <th scope="col">Rank</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <a href="#">
+                        <th scope="row">1</th>
+                        <td>Mark mburu</td>
+                        <td>Nyeri</td>
+                        <td><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span></td>
+                    </a>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">2</th>
+
+                    <td><a href="#">Mary Nyakundi</a></td>
+
+                    <td>Naivasha</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></td>
+                </tr>
+
+                <a href="#">
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>James murui</td>
+                        <td>meru</td>
+                        <td><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></td>
+                    </tr>
+                </a>
+            </tbody>
+        </table>
+    </main>
+
+
     <footer>
         <div class="container-fluid p-0">
             <div class="row text-left">
@@ -98,7 +123,7 @@
                         similique
                         illum corrupti</p>
                     <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This template is made for
-                        <span> RollingCargo</span>
+                        <span> Avocorp</span>
                     </p>
                 </div>
                 <div class="col-md-5 col-sm-12">
@@ -131,6 +156,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -139,10 +165,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-        integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
-    <script src="../main.js"></script>
-</body>
 
+</body>
 
 </html>
